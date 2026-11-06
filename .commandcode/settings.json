@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(for:*)",
+      "Shell(*.php:*)",
+      "Shell(do:*)",
+      "Shell(C:xamppphpphp.exe:*)",
+      "Shell(findstr:*)",
+      "Shell(C:\\xampp\\mysql\\bin\\mysql.exe -u root < C:\\xampp\\htdocs\\E-commarce\\database\\db_marketplace.sql && C:\\xampp\\mysql\\bin\\mysql.exe -u root -e \"SHOW TABLES; SELECT COUNT(*) AS produk FROM produk; SELECT COUNT(*) AS users FROM users;\" db_marketplace)",
+      "Shell(curl -s -o nul -w HTTP %{http_code} -> %{redirect_url} http://localhost/E-commarce/)",
+      "Shell(echo.:*)",
+      "Shell(curl -s -L http://localhost/E-commarce/produk/index.php)",
+      "Shell(git:*)",
+      "Shell(gh:*)",
+      "Shell(if:*)",
+      "Shell(C:\\Program Files\\Git\\bin\\git.exe:*)",
+      "Shell(else:*)",
+      "Shell(where git 2>nul & dir /b \"C:\\Program Files (x86)\\Git\\bin\\git.exe\" 2>nul & dir /b \"%LOCALAPPDATA%\\Programs\\Git\\bin\\git.exe\" 2>nul & dir /b \"C:\\xampp\\git\\bin\\git.exe\" 2>nul & echo CEK_SELESAI)",
+      "Shell(agent-browser:*)",
+      "Shell(C:xamppmysqlbinmysql.exe:*)",
+      "Shell(npm:*)",
+      "Shell(mkdir C:\\xampp\\htdocs\\E-commarce\\docs\\screenshots 2>nul & agent-browser open http://localhost/E-commarce/produk/index.php 2>&1 & agent-browser screenshot --full-page C:\\xampp\\htdocs\\E-commarce\\docs\\screenshots\\01-daftar-produk.png 2>&1)",
+      "Shell(copy /Y C:\\xampp\\htdocs\\E-commarce\\assets\\img\\produk\\*.svg C:\\xampp\\htdocs\\E-commarce\\assets\\uploads\\ >nul & C:\\xampp\\mysql\\bin\\mysql.exe -u root -e \"UPDATE produk SET gambar='headphone.svg' WHERE id_produk=1; UPDATE produk SET gambar='mouse.svg' WHERE id_produk=2; UPDATE produk SET gambar='kaos.svg' WHERE id_produk=3; UPDATE produk SET gambar='matras.svg' WHERE id_produk=4; UPDATE produk SET gambar='keripik.svg' WHERE id_produk=5; UPDATE produk SET gambar='kopi.svg' WHERE id_produk=6; UPDATE produk SET gambar='madu.svg' WHERE id_produk=7; UPDATE produk SET gambar='sapu.svg' WHERE id_produk=8; UPDATE produk SET gambar='keyboard.svg' WHERE id_produk=9; UPDATE produk SET gambar='tas.svg' WHERE id_produk=10; SELECT id_produk, nama_produk, gambar FROM produk;\" db_marketplace)",
+      "Shell(curl -s -o nul -w HTTP %{http_code} http://localhost/E-commarce/)",
+      "Shell(dir:*)",
+      "powershell"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

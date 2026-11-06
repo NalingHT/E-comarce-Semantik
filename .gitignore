@@ -1,0 +1,11 @@
+# Kredensial database - JANGAN diunggah ke repository publik
+config/database.local.php
+
+# File upload pengguna (gambar bawaan di assets/img/produk/ TETAP ikut repo)
+assets/uploads/*
+!assets/uploads/.gitkeep
+!assets/uploads/*.svg
+
+# File sistem
+Thumbs.db
+.DS_Store

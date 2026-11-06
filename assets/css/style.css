@@ -1,0 +1,217 @@
+/* ===== TokoKita Theme: Hijau - Kuning - Orange ===== */
+:root {
+    --tk-green: #2e7d32;
+    --tk-green-dark: #1b5e20;
+    --tk-green-light: #e8f5e9;
+    --tk-yellow: #ffc107;
+    --tk-yellow-dark: #ff8f00;
+    --tk-yellow-light: #fff8e1;
+    --tk-orange: #f57c00;
+    --tk-orange-dark: #e65100;
+    --tk-orange-light: #fff3e0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f6f9f4;
+}
+
+/* ===== Navbar ===== */
+.navbar.bg-primary {
+    background: linear-gradient(135deg, var(--tk-green-dark) 0%, var(--tk-green) 100%) !important;
+    box-shadow: 0 2px 12px rgba(27, 94, 32, .35);
+}
+
+.navbar .navbar-brand {
+    color: var(--tk-yellow) !important;
+    font-size: 1.4rem;
+    letter-spacing: .5px;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, .92) !important;
+    font-weight: 500;
+    border-radius: .5rem;
+    transition: background .2s, color .2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--tk-yellow) !important;
+    background: rgba(255, 255, 255, .12);
+}
+
+.navbar .btn-light {
+    background: var(--tk-yellow);
+    border-color: var(--tk-yellow);
+    color: #3e2723;
+    font-weight: 600;
+}
+
+.navbar .btn-light:hover {
+    background: var(--tk-yellow-dark);
+    border-color: var(--tk-yellow-dark);
+    color: #fff;
+}
+
+.navbar .form-control:focus {
+    border-color: var(--tk-yellow);
+    box-shadow: 0 0 0 .2rem rgba(255, 193, 7, .35);
+}
+
+/* ===== Links ===== */
+a { color: var(--tk-green); }
+a:hover { color: var(--tk-orange); }
+
+.breadcrumb-item a { text-decoration: none; }
+.breadcrumb-item.active { color: var(--tk-orange); font-weight: 600; }
+
+/* ===== Buttons ===== */
+.btn-primary {
+    --bs-btn-bg: var(--tk-orange);
+    --bs-btn-border-color: var(--tk-orange);
+    --bs-btn-hover-bg: var(--tk-orange-dark);
+    --bs-btn-hover-border-color: var(--tk-orange-dark);
+    --bs-btn-active-bg: var(--tk-orange-dark);
+    --bs-btn-active-border-color: var(--tk-orange-dark);
+    --bs-btn-disabled-bg: var(--tk-orange);
+    --bs-btn-disabled-border-color: var(--tk-orange);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--tk-orange);
+    --bs-btn-border-color: var(--tk-orange);
+    --bs-btn-hover-bg: var(--tk-orange);
+    --bs-btn-hover-border-color: var(--tk-orange);
+    --bs-btn-active-bg: var(--tk-orange-dark);
+    --bs-btn-active-border-color: var(--tk-orange-dark);
+}
+
+.btn-success {
+    --bs-btn-bg: var(--tk-green);
+    --bs-btn-border-color: var(--tk-green);
+    --bs-btn-hover-bg: var(--tk-green-dark);
+    --bs-btn-hover-border-color: var(--tk-green-dark);
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--tk-green);
+    --bs-btn-border-color: var(--tk-green);
+    --bs-btn-hover-bg: var(--tk-green);
+    --bs-btn-hover-border-color: var(--tk-green);
+}
+
+.btn-outline-success:hover { color: #fff; }
+
+.btn-warning {
+    --bs-btn-bg: var(--tk-yellow);
+    --bs-btn-border-color: var(--tk-yellow);
+    --bs-btn-hover-bg: var(--tk-yellow-dark);
+    --bs-btn-hover-border-color: var(--tk-yellow-dark);
+    --bs-btn-color: #3e2723;
+    --bs-btn-hover-color: #fff;
+}
+
+.btn-outline-secondary:hover {
+    background: var(--tk-green-light);
+    color: var(--tk-green-dark);
+    border-color: var(--tk-green);
+}
+
+/* ===== Text & Badge ===== */
+.text-primary { color: var(--tk-orange) !important; }
+
+.badge.text-bg-secondary {
+    background: var(--tk-yellow) !important;
+    color: #4e342e !important;
+    font-weight: 600;
+}
+
+.badge.text-bg-danger { background: var(--tk-orange-dark) !important; }
+.badge.text-bg-success { background: var(--tk-green) !important; }
+.badge.text-bg-warning { background: var(--tk-yellow) !important; color: #4e342e !important; }
+.badge.text-bg-info { background: #00838f !important; }
+.badge.text-bg-primary { background: var(--tk-orange) !important; }
+
+/* ===== Card ===== */
+.card {
+    border: none;
+    border-radius: .9rem;
+    overflow: hidden;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card.shadow-sm:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(27, 94, 32, .18) !important;
+}
+
+.card-header.bg-white {
+    background: var(--tk-green-light) !important;
+    color: var(--tk-green-dark);
+    border-bottom: 2px solid var(--tk-green);
+}
+
+/* ===== Table ===== */
+.table-light {
+    --bs-table-bg: var(--tk-green-light);
+    --bs-table-color: var(--tk-green-dark);
+}
+
+.table thead th { font-weight: 700; }
+tfoot.table-light td { background: var(--tk-yellow-light) !important; }
+
+/* ===== Pagination ===== */
+.page-link { color: var(--tk-green); }
+.page-link:hover { color: var(--tk-orange-dark); background: var(--tk-orange-light); }
+
+.page-item.active .page-link {
+    background: var(--tk-orange);
+    border-color: var(--tk-orange);
+}
+
+/* ===== Form ===== */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--tk-green);
+    box-shadow: 0 0 0 .2rem rgba(46, 125, 50, .2);
+}
+
+/* ===== Alert ===== */
+.alert-success {
+    background: var(--tk-green-light);
+    border-color: var(--tk-green);
+    color: var(--tk-green-dark);
+}
+
+.alert-warning {
+    background: var(--tk-yellow-light);
+    border-color: var(--tk-yellow);
+    color: #5d4037;
+}
+
+/* ===== Modal ===== */
+.modal-header {
+    background: var(--tk-green-light);
+    border-bottom: 2px solid var(--tk-green);
+}
+
+.modal-title { color: var(--tk-green-dark); }
+
+/* ===== Footer ===== */
+footer.bg-dark {
+    background: linear-gradient(135deg, var(--tk-green-dark), #123d15) !important;
+}
+
+/* ===== Dropdown user menu ===== */
+.dropdown-menu { border-radius: .7rem; border: none; box-shadow: 0 8px 24px rgba(0,0,0,.15); }
+.dropdown-item:active { background: var(--tk-green); }
+.dropdown-item:hover { background: var(--tk-green-light); color: var(--tk-green-dark); }
+
+/* ===== Headings aksen ===== */
+h4.mb-4, h4.mb-0 {
+    color: var(--tk-green-dark);
+    font-weight: 700;
+    border-left: 5px solid var(--tk-yellow);
+    padding-left: .6rem;
+}
